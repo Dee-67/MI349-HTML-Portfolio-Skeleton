@@ -1,13 +1,13 @@
 :root {
     
-	--color-page: #f5f7f4;
+	--color-page: #205b4e;
 	--color-surface: #ffffff;
 	--color-text: #202720;
 	--color-muted: #59645d;
-	--color-accent: #205b4e;
+	--color-accent: #cae6f0;
 	--color-border: #d8e0da;
 
-	--font-body: "Trebuchet MS", sans-serif;
+	--font-body: "Times New Roman", sans-serif;
 	--font-heading: Georgia, serif;
 
 	--space-xs: 0.25rem;
@@ -54,7 +54,12 @@ header nav ul {
 	list-style: none;
 }
 #project { 
-    img
+    img {
+        width: 100%;
+        height: auto;
+        border-radius: var(--radius-md);
+        box-shadow: var(--shadow-sm);
+    }
 }
 
 header a {
