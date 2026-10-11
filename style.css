@@ -1,12 +1,10 @@
-header {
-	background-color: var(--color-surface);
-}
 :root {
+    
 	--color-page: #f5f7f4;
 	--color-surface: #ffffff;
 	--color-text: #202720;
 	--color-muted: #59645d;
-	--color-accent: #176b57;
+	--color-accent: #205b4e;
 	--color-border: #d8e0da;
 
 	--font-body: "Trebuchet MS", sans-serif;
@@ -23,28 +21,47 @@ header {
 	--radius-md: 0.5rem;
 	--shadow-sm: 0 1px 4px rgb(32 39 32 / 12%);
 }
-:root {
-	--color-page: #f5f7f4;
-	--color-surface: #ffffff;
-	--color-text: #202720;
-	--color-muted: #59645d;
-	--color-accent: #176b57;
-	--color-border: #d8e0da;
-	--font-body: "Trebuchet MS", sans-serif;
-	--font-heading: Georgia, serif;
-	--space-xs: 0.25rem;
-	--space-sm: 0.5rem;
-	--space-md: 1rem;
-	--space-lg: 1.5rem;
-	--space-xl: 2.5rem;
-	--content-width: 70rem;
-	--radius-sm: 0.25rem;
-	--radius-md: 0.5rem;
-	--shadow-sm: 0 1px 4px rgb(32 39 32 / 12%);
-}
+
 
 body {
 	color: var(--color-text);
 	background-color: var(--color-page);
 	font-family: var(--font-body);
+}
+
+header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	gap: var(--space-md);
+	padding: var(--space-md) var(--space-lg);
+	background-color: var(--color-accent);
+	color: var(--color-surface);
+}
+
+header h1 {
+	margin: 0;
+	font-family: var(--font-heading);
+}
+
+header nav ul {
+	display: flex;
+	flex-wrap: wrap;
+	gap: var(--space-md);
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+#project { 
+    img
+}
+
+header a {
+	color: inherit;
+}
+
+header a[aria-current="page"] {
+	text-decoration-thickness: 0.15em;
+	text-underline-offset: 0.25em;
 }
