@@ -1,6 +1,6 @@
 :root {
     
-	--color-page: #205b4e;
+	--color-page: #28c4a2;
 	--color-surface: #ffffff;
 	--color-text: #202720;
 	--color-muted: #59645d;
@@ -55,11 +55,22 @@ header nav ul {
 }
 #project { 
     img {
-        width: 100%;
+        width: 75%;
+        height: auto;
+        border-radius: var(--radius-md);
+        box-shadow: var(--shadow-sm);
+    
+    }
+#facts {
+    img {
+        width: 75%;
         height: auto;
         border-radius: var(--radius-md);
         box-shadow: var(--shadow-sm);
     }
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-md);}
 }
 
 header a {
