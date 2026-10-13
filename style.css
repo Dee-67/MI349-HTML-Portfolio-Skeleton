@@ -21,8 +21,11 @@
 	--radius-md: 0.5rem;
 	--shadow-sm: 0 1px 4px rgb(32 39 32 / 12%);
 }
-
-
+index { 
+	color: var(--color-page);
+	background-color: var(--color-surface);
+	font-family: var(--font-body);
+}
 body {
 	color: var(--color-text);
 	background-color: var(--color-page);
@@ -53,7 +56,18 @@ header nav ul {
 	padding: 0;
 	list-style: none;
 }
-#project { 
+
+#projects { 
+	projects {
+		display: flex;
+		flex-wrap: wrap;
+		gap: var(--space-md);
+	}
+	#projects.article {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+	}
     img {
         width: 75%;
         height: auto;
