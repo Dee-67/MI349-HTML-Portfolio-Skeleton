@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Deangelo Bennett - Portfolio</title>
     <link rel="stylesheet" href="style.css">
   </head>
@@ -8,7 +10,10 @@
     <header>
       <h1>Deangelo Bennett</h1>
    
-
+    <!--Project Format -->
+    <!-- Copilot assissted me with a code of updating layouts with my project slide to make grids. This grids was structured to make the site more organized. -->
+       <!-- Copilot assissted me with media quiries to adjust width of screen sizes.  -->
+        <!--Copilot agent assissted me with media queries and an animation function/rule key frames this concept allowed my website to have animations for more attention from the website. -->
     <!-- Navigation bar -->
      <!-- The navigation bar contains links to different sections of the website. -->
       <!-- The "Home" link points to the home section of the index.html page. -->
@@ -18,7 +23,7 @@
           <!-- The "target='_blank'" attribute opens links in a new tab with a new section. -->
            <!-- The "rel='noopener noreferrer'" attribute is used to block off the referrer information from other site to prevent conflicts and security issues. -->
             <!-- The "aria-current='page'" attribute is used to indicate the current page in the navigation bar is in ACTION throughout all codes. It helps keeping everything in sequence. -->
-    <nav>
+    <nav aria-label="Main navigation">
         <ul>
             <li><a href="index.html#home" aria-current="page">Home</a></li>
             <li><a href="contact.html" target="_blank" rel="noopener noreferrer">Contact</a></li>
@@ -27,21 +32,58 @@
         </ul>
     </nav>
     </header>
-    <h1>Welcome!</h1>
-    <section id="home">
-      <h2>Introduction &lt;
-      <img src="Images/Screenshot%2026-10-10%225521.png" alt="Deangelo Bennett" width="200" height="200"> </h2>
-      <p>This is my personal portfolio website where I showcase my projects and work. Feel free to explore and learn more about me!</p>
-      <p>If you have any questions, you can contact me in the contacts tab. </p>
-    </section>
-   
-      <article>
-        <h3>Who Am I?</h3>
-        <p>Hello everyone, my name is Deangelo Bennett. I am a senior at MSU majoring in information science. I was originally a computer science major but I decided to change my major to information science.</p>
-        <p>I am a very passionate person when it comes to technology and I love to learn new things. I am also a very dedicated student and I always strive to do my best no matter the circumstances.</p>
-        <p>I am well rounded and flexible when it comes to adapting to new situations and work environments. </p>
-      </article>
-   
+    <main>
+      <section class="showcase" id="home" aria-labelledby="showcase-title">
+        <div class="showcase-copy">
+          <p class="eyebrow">Portfolio . Michigan State University</p>
+          <h2 id="showcase-title">Welcome to my portfolio!</h2>
+          <p class="showcase-intro">My name is Deangelo Bennett and I am an information science student at MSU exploring technology and creative problem-solving.</p>
+          <a class="showcase-link" href="projects.html">Explore my projects <span aria-hidden="true">↗</span></a>
+          <p class="showcase-note">A little about me, and a look at what I make.</p>
+        </div>
+        <figure class="showcase-portrait">
+          <img src="Images/Myself.jpg" alt="Deangelo Bennett" width="400" height="400">
+          <figcaption>Deangelo Bennett <span>East Lansing, Michigan</span></figcaption>
+        </figure>
+      </section>
+
+      <section class="topic-grid" aria-label="Explore the portfolio">
+        <a class="topic-tile topic-about" href="#about">
+          <span class="topic-number">01 / ABOUT</span>
+          <h3>Who I am</h3>
+          <p>Information science, a curious mind, and a flexible approach.</p>
+          <span class="topic-arrow" aria-hidden="true">↘</span>
+        </a>
+        <a class="topic-tile topic-projects" href="projects.html">
+          <span class="topic-number">02 / WORK</span>
+          <h3>Projects</h3>
+          <p> Projects/work I've done over the years.</p>
+          <span class="topic-arrow" aria-hidden="true">↗</span>
+        </a>
+        <a class="topic-tile topic-facts" href="facts.html">
+          <span class="topic-number">03 / OFF-SCREEN</span>
+          <h3>Interests/Facts</h3>
+          <p>Gaming, streaming/content-creation, and cooking.</p>
+          <span class="topic-arrow" aria-hidden="true">↗</span>
+        </a>
+        <a class="topic-tile topic-contact" href="contact.html">
+          <span class="topic-number">04 / CONTACT</span>
+          <h3>Get in touch</h3>
+          <p>Have a question or an idea? Reach out.</p>
+          <span class="topic-arrow" aria-hidden="true">↗</span>
+        </a>
+      </section>
+
+      <section class="about-section" id="about" aria-labelledby="about-title">
+        <p class="eyebrow">A little more context</p>
+        <h2 id="about-title">Learning while exploring.</h2>
+        <div>
+          <p>I'm a senior at MSU majoring in information science. I started out studying computer science, then followed my interests toward the people, systems, and technology that shape how information is used.</p>
+          <p>I'm passionate about technology, always eager to learn, and comfortable adapting to new situations and work environments.</p>
+        </div>
+      </section>
+    </main>
+
     <footer>
       <p>&copy; 2026 Deangelo Bennett. All rights reserved.</p>
     </footer>
