@@ -5,7 +5,7 @@
 	--color-muted: #52625c;
 	--color-forest: #193d36;
 	--color-mint: #dcebe2;
-	--color-coral: #e4755b;
+	--color-coral: #F79E6A;
 	--color-gold: #e9bf62;
 	--color-border: #c5d1c8;
 	--font-body: "Trebuchet MS", sans-serif;
@@ -105,7 +105,7 @@ main {
 }
 
 .eyebrow {
-	color: #a14936;
+	color: #F79E6A;
 }
 
 .showcase h2,
